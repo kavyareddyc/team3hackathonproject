@@ -106,7 +106,7 @@ public class urbanLadder {
 
 		WebElement sliderB = driver.findElement(By.xpath(readProperty.getKey("slider_end_Xpath")));
 		highlighterMethod.highlight(driver, sliderB);
-		move.dragAndDropBy(sliderB, -240, 0).click();
+		move.dragAndDropBy(sliderB, -178, 0).click();
 		
 		move.build().perform();
 		screenCapture.takeScreenShot(driver,"Price range");
@@ -222,7 +222,7 @@ public class urbanLadder {
 
 		Select date = new Select(driver.findElement(By.xpath(readProperty.getKey("date_Xpath"))));
 		Thread.sleep(2000);
-		date.selectByVisibleText("2");
+		date.selectByVisibleText("4");
 		//Thread.sleep(5000);
 
 		driver.findElement(By.xpath(readProperty.getKey("1000Btn_Xpath"))).click();
